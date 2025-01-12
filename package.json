@@ -1,0 +1,16 @@
+{
+  "name": "third_project",
+  "version": "1.0.0",
+  "description": "third_project",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./Tailwind/tailwind.css -o ./main/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.12.23",
+    "tailwindcss": "^3.4.17"
+  }
+}
