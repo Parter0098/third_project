@@ -4,7 +4,8 @@
   "description": "third_project",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./Tailwind/tailwind.css -o ./main/main.css --watch"
+    "tailwind": "npx tailwindcss -i ./Tailwind/tailwind.css -o ./main/main.css --watch",
+    "server": "json-server --watch db.json --port 3002"
   },
   "keywords": [],
   "author": "",

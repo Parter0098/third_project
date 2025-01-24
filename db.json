@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "title": "تی‌شرت مشکی ساده",
+      "price": 800000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/black_Tshirt.png"
+    },
+    {
+      "title": "شلوار لی آبی",
+      "price": 600000,
+      "discount": 20,
+      "rating": 3.5,
+      "image": "img/data/blue_pants.png"
+    },
+    {
+      "title": "لباس راه راه",
+      "price": 110000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/rainbow_clothe.png"
+    },
+    {
+      "title": "تی‌شرت مشکی ساده",
+      "price": 120000,
+      "discount": 30,
+      "rating": 4.5,
+      "image": "img/data/Tshirt_brown.png"
+    }
+  ],
+  "products2": [
+    {
+      "title": "تی‌شرت مشکی ساده",
+      "price": 800000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/black_Tshirt.png"
+    },
+    {
+      "title": "شلوار لی آبی",
+      "price": 600000,
+      "discount": 20,
+      "rating": 3.5,
+      "image": "img/data/blue_pants.png"
+    },
+    {
+      "title": "لباس راه راه",
+      "price": 110000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/rainbow_clothe.png"
+    },
+    {
+      "title": "تی‌شرت مشکی ساده",
+      "price": 120000,
+      "discount": 30,
+      "rating": 4.5,
+      "image": "img/data/Tshirt_brown.png"
+    }
+  ]
+}
