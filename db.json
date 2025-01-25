@@ -1,29 +1,29 @@
 {
   "products": [
     {
-      "title": "تی‌شرت مشکی ساده",
+      "title": "تی شرت با جزئیات نوار",
       "price": 800000,
       "discount": 0,
       "rating": 4.5,
       "image": "img/data/black_Tshirt.png"
     },
     {
-      "title": "شلوار لی آبی",
+      "title": "شلوار جین لاغر مناسب",
       "price": 600000,
       "discount": 20,
       "rating": 3.5,
       "image": "img/data/blue_pants.png"
     },
     {
-      "title": "لباس راه راه",
-      "price": 110000,
+      "title": "پیراهن شطرنجی",
+      "price": 1100000,
       "discount": 0,
       "rating": 4.5,
       "image": "img/data/rainbow_clothe.png"
     },
     {
-      "title": "تی‌شرت مشکی ساده",
-      "price": 120000,
+      "title": "تی شرت راه راه آستین",
+      "price": 1200000,
       "discount": 30,
       "rating": 4.5,
       "image": "img/data/Tshirt_brown.png"
@@ -31,32 +31,32 @@
   ],
   "products2": [
     {
-      "title": "تی‌شرت مشکی ساده",
-      "price": 800000,
-      "discount": 0,
-      "rating": 4.5,
-      "image": "img/data/black_Tshirt.png"
-    },
-    {
-      "title": "شلوار لی آبی",
-      "price": 600000,
+      "title": "پیراهن راه راه عمودی",
+      "price": 1700000,
       "discount": 20,
-      "rating": 3.5,
-      "image": "img/data/blue_pants.png"
+      "rating": 5.0,
+      "image": "img/data/green_clothes.png"
     },
     {
-      "title": "لباس راه راه",
-      "price": 110000,
+      "title": "تی شرت گرافیکی شجاعت",
+      "price": 1400000,
+      "discount": 0,
+      "rating": 4.0,
+      "image": "img/data/orange_Tshirt.png"
+    },
+    {
+      "title": "شورت برمودای گشاد",
+      "price": 600000,
+      "discount": 0,
+      "rating": 3.0,
+      "image": "img/data/half_pants.png"
+    },
+    {
+      "title": "شلوار جین لاغر محو شده",
+      "price": 1200000,
       "discount": 0,
       "rating": 4.5,
-      "image": "img/data/rainbow_clothe.png"
-    },
-    {
-      "title": "تی‌شرت مشکی ساده",
-      "price": 120000,
-      "discount": 30,
-      "rating": 4.5,
-      "image": "img/data/Tshirt_brown.png"
+      "image": "img/data/black_pants.png"
     }
   ]
 }
