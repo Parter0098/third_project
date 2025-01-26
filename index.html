@@ -10,6 +10,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+
 
 </head>
 
@@ -195,18 +197,114 @@
     </div>
 
     <!-- browse -->
-     <!-- customer -->
+    <!-- customer -->
     <div class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-center mb-8">نظرات مشتریان</h2>
+        <h2 class="text-3xl font-bold text-right text-black mr-4 mb-8">مشتریان راضی ما</h2>
         <div class="relative overflow-x-auto">
             <div class="flex items-center space-x-4 transition-transform duration-500" id="testimonialSlider">
-                <!-- کارت‌ها به صورت داینامیک در اینجا اضافه خواهند شد -->
             </div>
         </div>
     </div>
 
-      <!-- customer -->
+    <!-- customer -->
+    <!-- footer -->
+    <div class="bg-gray-50 border-t border-gray-200">
+        <div class="bg-black text-white py-8">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                <h2 class="text-2xl font-bold mb-4 md:mb-0 text-white">از جدیدترین پیشنهادات ما باخبر شوید</h2>
+                <div class="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:items-center">
+                    <input type="email" placeholder="آدرس ایمیل خود را وارد کنید"
+                        class="px-4 py-2 rounded-full text-black bg-white focus:outline-none w-full md:w-64" />
+                    <button class="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-200">
+                        عضویت در خبرنامه
+                    </button>
+                </div>
+            </div>
+        </div>
 
+        <div class="container mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div>
+                <h1 class="text-xl font-bold text-black">فروشگاه.کو</h1>
+                <p class="text-sm text-gray-600 mt-2">
+                    ما لباس‌هایی داریم که با سبک شما هم‌خوانی دارند و به آنها افتخار می‌کنید. از زنان تا مردان.
+                </p>
+                <div class="flex mt-4">
+                    <a href="#"
+                        class="ml-5 w-[40px] h-[40px] bg-white rounded-[50%] text-gray-600 hover:text-black flex justify-center items-center">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="ml-5 w-[40px] h-[40px] bg-black rounded-[50%] text-white flex justify-center items-center">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#"
+                        class="ml-5 w-[40px] h-[40px] bg-white rounded-[50%] text-gray-600 hover:text-black flex justify-center items-center">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="ml-5 w-[40px] h-[40px] bg-white rounded-[50%] text-gray-600 hover:text-black flex justify-center items-center">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold mb-4 text-black">شرکت</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-black">درباره ما</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">ویژگی‌ها</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">نحوه کار</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">فرصت‌های شغلی</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold mb-4 text-black">کمک</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-black">پشتیبانی مشتری</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">جزئیات تحویل</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">شرایط و ضوابط</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">سیاست حفظ حریم خصوصی</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold mb-4 text-black">سوالات متداول</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-black">حساب کاربری</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">مدیریت تحویل‌ها</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">سفارش‌ها</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">پرداخت‌ها</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-bold mb-4 text-black">منابع</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-black">کتاب‌های الکترونیکی رایگان</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">آموزش توسعه</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">وبلاگ آموزشی</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-black">پلی‌لیست یوتیوب</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 py-6">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-600">Shop.co © 2000-2023، کلیه حقوق محفوظ است</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <img src="visa.png" alt="ویزا" class="h-6">
+                    <img src="mastercard.png" alt="مسترکارت" class="h-6">
+                    <img src="paypal.png" alt="پی‌پال" class="h-6">
+                    <img src="applepay.png" alt="اپل پی" class="h-6">
+                    <img src="googlepay.png" alt="گوگل پی" class="h-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
     <script src="./main.js"></script>
 </body>
 

@@ -123,48 +123,44 @@ document.addEventListener('DOMContentLoaded', fetchCard2)
 // card-2
 
 // customer
-// کد جاوا اسکریپت برای بارگذاری داده‌ها و نمایش کارت‌ها
-
 const slider = document.getElementById('testimonialSlider')
 
-// بارگذاری داده‌ها از JSON و ساخت کارت‌ها
-function loadTestimonials () {
-  fetch('http://localhost:3002/customer')
-    .then(response => response.json())
-    .then(data => {
-      data.forEach(testimonial => {
-        // ایجاد هر کارت به صورت داینامیک
-        const card = document.createElement('div')
-        card.classList.add(
-          'testimonial-card',
-          'p-6',
-          'rounded-lg',
-          'shadow-md',
-          'bg-white',
-          'flex-shrink-0',
-          'w-80',
-          'h-56',
-          'ml-4'
-        ) // w-80 را به عنوان اندازه ثابت برای عرض و h-auto برای ارتفاع ثابت اضافه می‌کنیم
+const fetchTestimonials = async () => {
+  let htmlTestimonials = ''
+  try {
+    const resTestimonials = await fetch('http://localhost:3002/customer')
+    const dataTestimonials = await resTestimonials.json()
 
-        card.innerHTML = `
-          <div class="flex items-center mb-4">
-            <img src="${testimonial.avatar}" alt="Avatar" class="w-10 h-10 rounded-full">
-            <div class="ml-3">
-              <h3 class="text-lg font-semibold">${testimonial.name}</h3>
-              <p class="text-gray-500 text-sm">${testimonial.role}</p>
+    dataTestimonials.forEach(testimonial => {
+      htmlTestimonials += `
+            <div class="p-6 rounded-[15px] shadow-md bg-white flex-shrink-0 h-56 w-96 ml-4 border border-gray-200">
+            <!-- بخش ستاره‌ها -->
+            <div class="flex items-center mb-2">
+              <div class="flex text-yellow-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
+              </div>
             </div>
+            <!-- نام و تأیید -->
+            <div class="flex items-center mb-4">
+              <h3 class="text-lg font-semibold text-gray-900">${testimonial.name}</h3>
+              <span class="ml-2 text-green-600 text-lg">✔</span>
+            </div>
+            <!-- نقل قول -->
+            <p class="text-gray-700 text-sm italic">"${testimonial.testimonial}"</p>
           </div>
-          <p class="text-gray-700">${testimonial.testimonial}</p>
-        `
-
-        slider.appendChild(card) // اضافه کردن کارت به اسلایدر
-      })
+      `
     })
-    .catch(error => console.error('Error loading the testimonials:', error))
+
+    slider.innerHTML = htmlTestimonials
+  } catch (error) {
+    console.error('Error fetching testimonials:', error)
+  }
 }
 
-// بارگذاری اولیه داده‌ها
-loadTestimonials()
+document.addEventListener('DOMContentLoaded', fetchTestimonials)
 
 // customer
