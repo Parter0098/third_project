@@ -134,11 +134,12 @@
     <div class="w-full h-16 flex">
         <h1 class="text-center text-black font-bold mx-auto mt-10 text-[40px]"> تازه ها</h1>
     </div>
-    <div class="card-container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3 p-4 mt-20 justify-evenly ">
+    <div
+        class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4 mt-20 justify-evenly ">
     </div>
     <div class="flex justify-center mt-8">
         <button
-            class="btn text-white border-2 border-gray-400 rounded-full px-8 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
+            class="btn bg-white text-black border-2 border-gray-400 rounded-full px-8 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
             دیدن همه
         </button>
     </div>
@@ -146,18 +147,65 @@
     <div class="w-full h-16 flex">
         <h1 class="text-center font-bold mx-auto text-black mt-8 text-[40px]"> پر فروش ها</h1>
     </div>
-    <div class="card-container2 mt-20 flex flex-wrap justify-evenly ">
+    <div
+        class="card-container2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4 mt-20 justify-evenly ">
     </div>
     <div class="flex justify-center mt-8">
         <button
-            class="btn text-white border-2 border-gray-400 rounded-full px-8 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
+            class="btn text-black bg-white border-2 border-gray-400 rounded-full px-8 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:border-black">
             دیدن همه
         </button>
     </div>
 
     <!-- shop -->
-
     <!--people  -->
+    <!-- browse -->
+    <div class="flex flex-col items-center p-4 bg-gray-100 h-[100%] w-[80%] mx-auto mt-10 rounded-[15px]">
+        <h1 class="text-3xl text-black font-bold mb-10">انتخاب بر اساس سبک لباس</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-4xl">
+            <a href="#" class="relative block rounded-lg overflow-hidden">
+                <img src="img/casual.png" alt="کژوال" class="object-cover w-full h-48" style="transform: scaleX(-1);" />
+                <h1 class="absolute top-2 right-2 text-black text-3xl font-bold">
+                    کژوال
+                </h1>
+            </a>
+
+            <a href="#" class="relative block rounded-lg overflow-hidden">
+                <img src="img/formal.png" alt="رسمی" class="object-cover w-full h-48" style="transform: scaleX(-1);" />
+                <h1 class="absolute top-2 right-2 text-black text-3xl font-bold">
+                    رسمی
+                </h1>
+            </a>
+
+            <a href="#" class="relative block rounded-lg overflow-hidden">
+                <img src="img/party.png" alt="مجلسی" class="object-cover w-full h-48" style="transform: scaleX(-1);" />
+                <h1 class="absolute top-2 right-2 text-black text-3xl font-bold">
+                    مجلسی
+                </h1>
+            </a>
+
+            <a href="#" class="relative block rounded-lg overflow-hidden">
+                <img src="img/gym.png" alt="ورزشی" class="object-left w-full h-48" style="transform: scaleX(-1);" />
+                <h1 class="absolute top-2 right-2 text-black text-3xl font-bold">
+                    ورزشی
+                </h1>
+            </a>
+        </div>
+    </div>
+
+    <!-- browse -->
+     <!-- customer -->
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">نظرات مشتریان</h2>
+        <div class="relative overflow-x-auto">
+            <div class="flex items-center space-x-4 transition-transform duration-500" id="testimonialSlider">
+                <!-- کارت‌ها به صورت داینامیک در اینجا اضافه خواهند شد -->
+            </div>
+        </div>
+    </div>
+
+      <!-- customer -->
 
     <script src="./main.js"></script>
 </body>
