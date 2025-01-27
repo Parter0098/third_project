@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه محصول</title>
+    <link rel="stylesheet" href="main/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <!-- nav -->
+    <div class="navbar bg-white" dir="rtl">
+        <div class="flex-1 lg:hidden">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-white text-black rounded-box z-[1] mt-3 w-52 p-2 shadow text-right">
+                    <li>
+                        <a>فروشگاه</a>
+                        <ul class="p-2 text-right bg-white text-black">
+                            <li><a>لباس</a></li>
+                            <li><a>شلوار</a></li>
+                        </ul>
+                    </li>
+                    <li><a>پرفروش</a></li>
+                    <li><a>تازه ها</a></li>
+                    <li><a>برند ها</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="btn btn-ghost text-xl flex-1 lg:flex-none text-black">فروشگاه.کو</a>
+        <div class="hidden lg:flex flex-1 justify-start">
+            <ul class="menu menu-horizontal px-1 text-right bg-white text-black">
+                <li>
+                    <details>
+                        <summary class="text-black">فروشگاه</summary>
+                        <ul class="z-[1000] p-2 text-right bg-white text-black">
+                            <li><a>لباس</a></li>
+                            <li><a>شلوار</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a class="text-black">پرفروش</a></li>
+                <li><a class="text-black">تازه ها</a></li>
+                <li><a class="text-black">برند ها</a></li>
+            </ul>
+        </div>
+        <div class="flex gap-2 w-full lg:w-auto justify-end items-center mt-2 lg:mt-0">
+            <div class="form-control">
+                <input type="text" placeholder="جستجو"
+                    class="input input-bordered w-full lg:w-auto bg-white text-black" />
+            </div>
+            <div class="m-3 flex gap-3">
+                <div class="relative m-3 flex gap-3">
+                    <a class="icon-wrapper relative">
+                        <i class="fa-solid fa-cart-shopping text-black text-xl"></i>
+                        <span id="cart-count"
+                            class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">
+                            0
+                        </span>
+                    </a>
+                    <a class="icon-wrapper">
+                        <i class="fa-regular fa-user text-black text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- nav -->
+
+    <!-- Product Section -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Product Images -->
+            <div>
+                <img src="img/data/Tshirt_brown.png" alt="تصویر محصول" class="w-full rounded-lg shadow-md" />
+                <div class="grid grid-cols-4 gap-2 mt-4">
+                    <img src="img/data/Tshirt_brown.png" alt="تصویر بندانگشتی"
+                        class="w-full h-auto cursor-pointer rounded-lg border hover:scale-105 transition-transform" />
+                    <img src="img/data/Tshirt_brown.png" alt="تصویر بندانگشتی"
+                        class="w-full h-auto cursor-pointer rounded-lg border hover:scale-105 transition-transform" />
+                    <img src="img/data/Tshirt_brown.png" alt="تصویر بندانگشتی"
+                        class="w-full h-auto cursor-pointer rounded-lg border hover:scale-105 transition-transform" />
+                    <img src="img/data/Tshirt_brown.png" alt="تصویر بندانگشتی"
+                        class="w-full h-auto cursor-pointer rounded-lg border hover:scale-105 transition-transform" />
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div>
+                <h1 class="text-3xl font-extrabold text-black mb-4">تی‌شرت گرافیکی وان لایف</h1>
+                <div class="flex items-center gap-2">
+                    <div class="flex items-center text-yellow-500">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span
+                            class="text-gray-300">&#9733;</span>
+                    </div>
+                    <span class="text-gray-600">4.5/5</span>
+                </div>
+                <p class="text-2xl font-bold text-red-600 mt-4">۲۶۰ هزار تومان <span
+                        class="line-through text-gray-400">۳۰۰ هزار تومان</span></p>
+                <p class="text-gray-600 mt-4">این تی‌شرت گرافیکی برای هر مناسبتی عالی است. از پارچه‌ای نرم و قابل تنفس
+                    ساخته شده و راحتی و استایل برتری ارائه می‌دهد.</p>
+
+                <!-- Colors -->
+                <div class="mt-6">
+                    <h3 class="text-lg font-medium text-black">انتخاب رنگ:</h3>
+                    <div class="flex gap-3 mt-2">
+                        <button class="w-8 h-8 rounded-full border" style="background-color: #6b705c;"></button>
+                        <button class="w-8 h-8 rounded-full border" style="background-color: #1d3557;"></button>
+                        <button class="w-8 h-8 rounded-full border" style="background-color: #a8dadc;"></button>
+                    </div>
+                </div>
+
+                <!-- Sizes -->
+                <div class="mt-6">
+                    <h3 class="text-lg font-medium text-black">انتخاب سایز:</h3>
+                    <div class="flex gap-3 mt-2">
+                        <button class="px-4 py-2 border rounded-lg hover:bg-gray-200">کوچک</button>
+                        <button class="px-4 py-2 border rounded-lg hover:bg-gray-200">متوسط</button>
+                        <button class="px-4 py-2 border rounded-lg hover:bg-gray-200">بزرگ</button>
+                        <button class="px-4 py-2 border rounded-lg hover:bg-gray-200">خیلی بزرگ</button>
+                    </div>
+                </div>
+
+                <!-- Quantity and Add to Cart -->
+                <div class="flex items-center gap-4 mt-6">
+                    <div class="flex items-center border rounded-lg">
+                        <button class="px-4 py-2">-</button>
+                        <span class="px-4 border-x">۱</span>
+                        <button class="px-4 py-2">+</button>
+                    </div>
+                    <button id="add-to-cart" class="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800">افزودن
+                        به سبد
+                        خرید</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold text-black">نظرات کاربران</h2>
+            <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="p-4 border rounded-lg shadow-sm">
+                    <div class="flex items-center gap-2">
+                        <div class="flex text-yellow-500">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
+                        </div>
+                        <h3 class="text-lg font-medium">کاربر ۱</h3>
+                    </div>
+                    <p class="mt-2 text-gray-600">این تی‌شرت بسیار باکیفیت و طراحی جذاب دارد!</p>
+                </div>
+                <!-- Add more reviews as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script src="./product.js"></script>
+</body>
+
+</html>

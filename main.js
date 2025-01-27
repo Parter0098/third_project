@@ -1,7 +1,7 @@
 // card-1
 let fetchCard = async () => {
   let htmlCard = ''
-  let resCard = await fetch('http://localhost:3002/products')
+  let resCard = await fetch('http://localhost:3004/products')
   let dataCard = await resCard.json()
   dataCard.forEach(elem => {
     let discountedPrice = elem.price - (elem.price * elem.discount) / 100
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', fetchCard)
 // card-2
 let fetchCard2 = async () => {
   let htmlCard2 = ''
-  let resCard = await fetch('http://localhost:3002/products2')
+  let resCard = await fetch('http://localhost:3004/products2')
   let dataCard = await resCard.json()
   dataCard.forEach(elem => {
     let discountedPrice = elem.price - (elem.price * elem.discount) / 100
@@ -128,7 +128,7 @@ const slider = document.getElementById('testimonialSlider')
 const fetchTestimonials = async () => {
   let htmlTestimonials = ''
   try {
-    const resTestimonials = await fetch('http://localhost:3002/customer')
+    const resTestimonials = await fetch('http://localhost:3004/customer')
     const dataTestimonials = await resTestimonials.json()
 
     dataTestimonials.forEach(testimonial => {
