@@ -135,15 +135,7 @@ const fetchTestimonials = async () => {
       htmlTestimonials += `
             <div class="p-6 rounded-[15px] shadow-md bg-white flex-shrink-0 h-56 w-96 ml-4 border border-gray-200">
             <!-- بخش ستاره‌ها -->
-            <div class="flex items-center mb-2">
-              <div class="flex text-yellow-400">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.57 8.332 1.151-6.001 5.848 1.42 8.263-7.419-3.892-7.419 3.892 1.42-8.263-6.001-5.848 8.332-1.151z"/></svg>
-              </div>
-            </div>
+            <div class='flex mt-1 text-yellow-400'>⭐⭐⭐⭐⭐</div>
             <!-- نام و تأیید -->
             <div class="flex items-center mb-4">
               <h3 class="text-lg font-semibold text-gray-900">${testimonial.name}</h3>
