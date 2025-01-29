@@ -5,28 +5,32 @@
       "price": 1400000,
       "discount": 30,
       "rating": 5.0,
-      "image": "../img/data/white_black_tshirt.png"
+      "image": "../img/data/white_black_tshirt.png",
+      "link": "../products_page/white-black-clothes.html"
     },
     {
       "title": "چوگان با جزئیات انعام",
       "price": 1800000,
       "discount": 0,
       "rating": 4.5,
-      "image": "../img/data/pink_tshirt.png"
+      "image": "../img/data/pink_tshirt.png",
+      "link": "../products_page/pink-tshirt.html"
     },
     {
       "title": "گرافیک گرادیان تیشرت",
       "price": 1400000,
       "discount": 0,
       "rating": 3.5,
-      "image": "../img/data/white_rainbow_tishirt.png"
+      "image": "../img/data/white_rainbow_tishirt.png",
+      "link": "../products_page/white-rainbow-tshirt.html"
     },
     {
       "title": "پولو با تریم های کنتراست",
       "price": 1900000,
       "discount": 20,
       "rating": 4,
-      "image": "../img/data/blue_white_tshirt.png"
+      "image": "../img/data/blue_white_tshirt.png",
+      "link": "../products_page/blue-white-tshirt.html"
     }
   ],
   "customer": [

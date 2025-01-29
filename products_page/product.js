@@ -33,7 +33,7 @@ const slider1 = document.getElementById('testimonialSlider1')
 const fetchTestimonials1 = async () => {
   let htmlTestimonials1 = ''
   try {
-    const resTestimonials1 = await fetch('http://localhost:3004/customer')
+    const resTestimonials1 = await fetch('http://localhost:3005/customer')
     const dataTestimonials1 = await resTestimonials1.json()
 
     dataTestimonials1.forEach(testimonial1 => {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', fetchTestimonials1)
 // card
 let fetchCard3 = async () => {
   let htmlCard3 = ''
-  let resCard = await fetch('http://localhost:3004/products')
+  let resCard = await fetch('http://localhost:3005/products')
   let dataCard = await resCard.json()
   dataCard.forEach(elem => {
     let discountedPrice = elem.price - (elem.price * elem.discount) / 100
@@ -103,11 +103,13 @@ let fetchCard3 = async () => {
               `
           }
         </div>
-        <button
-          class="btn mt-4 w-full bg-neutral-950 text-white py-2 rounded-md hover:bg-neutral-800 transition-colors duration-200"
+        <a
+        href='${elem.link}'
+        class='btn mt-4 w-full bg-neutral-950 text-white py-2 rounded-md hover:bg-neutral-800 transition-colors duration-200 text-center block'
         >
-          خرید
-        </button>
+        خرید    
+        </a>
+
       </div>
     </div>
   `

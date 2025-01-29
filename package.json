@@ -6,10 +6,12 @@
   "scripts": {
     "tailwind": "npx tailwindcss -i ./Tailwind/tailwind.css -o ./main/main.css --watch",
     "server": "json-server --watch db.json --port 3004",
-    "server1": "json-server --watch ./products_page/db.json --port 3004"
+    "server1": "json-server --watch ./products_page/db.json --port 3005",
+    "start:both": "concurrently \"npm run server\" \"npm run server1\""
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
     "daisyui": "^4.12.23",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17"

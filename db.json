@@ -5,28 +5,32 @@
       "price": 800000,
       "discount": 0,
       "rating": 4.5,
-      "image": "img/data/black_Tshirt.png"
+      "image": "img/data/black_Tshirt.png",
+      "link": "./products_page/black-Tshirt.html"
     },
     {
       "title": "شلوار جین لاغر مناسب",
       "price": 600000,
       "discount": 20,
       "rating": 3.5,
-      "image": "img/data/blue_pants.png"
+      "image": "img/data/blue_pants.png",
+      "link": "./products_page/blue-pants.html"
     },
     {
       "title": "پیراهن شطرنجی",
       "price": 1100000,
       "discount": 0,
       "rating": 4.5,
-      "image": "img/data/rainbow_clothe.png"
+      "image": "img/data/rainbow_clothe.png",
+      "link": "./products_page/rainbow-clothes.html"
     },
     {
       "title": "تی شرت راه راه آستین",
       "price": 1200000,
       "discount": 30,
       "rating": 4.5,
-      "image": "img/data/Tshirt_brown.png"
+      "image": "img/data/Tshirt_brown.png",
+      "link": "./products_page/brown-tshirt.html"
     }
   ],
   "products2": [
@@ -35,28 +39,32 @@
       "price": 1700000,
       "discount": 20,
       "rating": 5.0,
-      "image": "img/data/green_clothes.png"
+      "image": "img/data/green_clothes.png",
+      "link": "./products_page/green-clothes.html"
     },
     {
       "title": "تی شرت گرافیکی شجاعت",
       "price": 1400000,
       "discount": 0,
       "rating": 4.0,
-      "image": "img/data/orange_Tshirt.png"
+      "image": "img/data/orange_Tshirt.png",
+      "link": "./products_page/orange-Tshirt.html"
     },
     {
       "title": "شورت برمودای گشاد",
       "price": 600000,
       "discount": 0,
       "rating": 3.0,
-      "image": "img/data/half_pants.png"
+      "image": "img/data/half_pants.png",
+      "link": "./products_page/half-pants.html"
     },
     {
       "title": "شلوار جین لاغر محو شده",
       "price": 1200000,
       "discount": 0,
       "rating": 4.5,
-      "image": "img/data/black_pants.png"
+      "image": "img/data/black_pants.png",
+      "link": "./products_page/black-pants.html"
     }
   ],
   "products3": [
@@ -65,28 +73,130 @@
       "price": 1400000,
       "discount": 30,
       "rating": 5.0,
-      "image": "./img/data/white_black_tshirt.png"
+      "image": "./img/data/white_black_tshirt.png",
+      "link": "./products_page/white-black-tshirt.html"
     },
     {
       "title": "چوگان با جزئیات انعام",
       "price": 1800000,
       "discount": 0,
       "rating": 4.5,
-      "image": "./img/data/pink_tshirt.png"
+      "image": "./img/data/pink_tshirt.png",
+      "link": "./products_page/pink-tshirt.html"
     },
     {
       "title": "گرافیک گرادیان تیشرت",
       "price": 1400000,
       "discount": 0,
       "rating": 3.5,
-      "image": "./img/data/white_rainbow_tishirt.png"
+      "image": "./img/data/white_rainbow_tishirt.png",
+      "link": "./products_page/white-rainbow-tshirt.html"
     },
     {
       "title": "پولو با تریم های کنتراست",
       "price": 1900000,
       "discount": 20,
       "rating": 4,
-      "image": "./img/data/blue_white_tshirt.png"
+      "image": "./img/data/blue_white_tshirt.png",
+      "link": "./products_page/blue-white-tshirt.html"
+    }
+  ],
+  "caregory": [
+    {
+      "title": "تی شرت با جزئیات نوار",
+      "price": 800000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/black_Tshirt.png",
+      "link": "./products_page/black-Tshirt.html"
+    },
+    {
+      "title": "شلوار جین لاغر مناسب",
+      "price": 600000,
+      "discount": 20,
+      "rating": 3.5,
+      "image": "img/data/blue_pants.png",
+      "link": "./products_page/blue-pants.html"
+    },
+    {
+      "title": "پیراهن شطرنجی",
+      "price": 1100000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/rainbow_clothe.png",
+      "link": "./products_page/rainbow-clothes.html"
+    },
+    {
+      "title": "تی شرت راه راه آستین",
+      "price": 1200000,
+      "discount": 30,
+      "rating": 4.5,
+      "image": "img/data/Tshirt_brown.png",
+      "link": "./products_page/brown-tshirt.html"
+    },
+    {
+      "title": "پیراهن راه راه عمودی",
+      "price": 1700000,
+      "discount": 20,
+      "rating": 5.0,
+      "image": "img/data/green_clothes.png",
+      "link": "./products_page/green-clothes.html"
+    },
+    {
+      "title": "تی شرت گرافیکی شجاعت",
+      "price": 1400000,
+      "discount": 0,
+      "rating": 4.0,
+      "image": "img/data/orange_Tshirt.png",
+      "link": "./products_page/orange-Tshirt.html"
+    },
+    {
+      "title": "شورت برمودای گشاد",
+      "price": 600000,
+      "discount": 0,
+      "rating": 3.0,
+      "image": "img/data/half_pants.png",
+      "link": "./products_page/half-pants.html"
+    },
+    {
+      "title": "شلوار جین لاغر محو شده",
+      "price": 1200000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/black_pants.png",
+      "link": "./products_page/black-pants.html"
+    },
+    {
+      "title": "پیراهن راه راه عمودی",
+      "price": 1400000,
+      "discount": 30,
+      "rating": 5.0,
+      "image": "./img/data/white_black_tshirt.png",
+      "link": "./products_page/white-black-tshirt.html"
+    },
+    {
+      "title": "چوگان با جزئیات انعام",
+      "price": 1800000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "./img/data/pink_tshirt.png",
+      "link": "./products_page/pink-tshirt.html"
+    },
+    {
+      "title": "گرافیک گرادیان تیشرت",
+      "price": 1400000,
+      "discount": 0,
+      "rating": 3.5,
+      "image": "./img/data/white_rainbow_tishirt.png",
+      "link": "./products_page/white-rainbow-tshirt.html"
+    },
+    {
+      "title": "پولو با تریم های کنتراست",
+      "price": 1900000,
+      "discount": 20,
+      "rating": 4,
+      "image": "./img/data/blue_white_tshirt.png",
+      "link": "./products_page/blue-white-tshirt.html"
     }
   ],
   "customer": [
