@@ -191,12 +191,20 @@
       "link": "./products_page/white-rainbow-tshirt.html"
     },
     {
-      "title": "پولو با تریم های کنتراست",
-      "price": 1900000,
+      "title": "پیراهن شطرنجی",
+      "price": 1100000,
+      "discount": 0,
+      "rating": 4.5,
+      "image": "img/data/rainbow_clothe.png",
+      "link": "./products_page/rainbow-clothes.html"
+    },
+    {
+      "title": ">تی‌شرت گرافیکی وان لایف",
+      "price": 1600000,
       "discount": 20,
-      "rating": 4,
-      "image": "./img/data/blue_white_tshirt.png",
-      "link": "./products_page/blue-white-tshirt.html"
+      "rating": 4.5,
+      "image": "./img/data/dark_brown_tshirt.png",
+      "link": "./products_page/dark-brows-tshirt.html"
     }
   ],
   "customer": [
