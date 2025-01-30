@@ -71,7 +71,7 @@ let fetchCard2 = async () => {
     let discountedPrice = elem.price - (elem.price * elem.discount) / 100
 
     htmlCard2 += `
-    <div class="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 mx-auto mb-8 rounded-lg overflow-hidden">
+    <div class="font- card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 mx-auto mb-8 rounded-lg overflow-hidden">
       <figure class="overflow-hidden rounded-t-lg">
         <img
           src="${elem.image}"
