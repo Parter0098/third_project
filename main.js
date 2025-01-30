@@ -44,12 +44,11 @@ let fetchCard = async () => {
           }
         </div>
         <a
-      href='${elem.link}'
-      class='btn mt-4 w-full bg-neutral-950 text-white py-2 rounded-md hover:bg-neutral-800 transition-colors duration-200 text-center block'
-      >
-      خرید
-      </a>
-
+          href='${elem.link}'
+          class='btn mt-4 w-full bg-neutral-950 text-white py-2 rounded-md hover:bg-neutral-800 transition-colors duration-200 text-center block'
+        >
+          خرید
+        </a>
       </div>
     </div>
   `
@@ -108,14 +107,11 @@ let fetchCard2 = async () => {
           }
         </div>
         <a
-        href='${elem.link}'
-        class='btn mt-4 w-full bg-neutral-950 text-white py-2 rounded-md hover:bg-neutral-800 transition-colors duration-200 text-center block'
+          href='${elem.link}'
+          class='btn mt-4 w-full bg-neutral-950 text-white py-2 rounded-md hover:bg-neutral-800 transition-colors duration-200 text-center block'
         >
-        خرید
-      </a>
-
-
-        
+          خرید
+        </a>
       </div>
     </div>
   `
