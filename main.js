@@ -1,5 +1,5 @@
 // card-1
-let fetchCard = async () => {
+let axiosCard = async () => {
   let htmlCard = ''
   let resCard = await fetch('http://localhost:3004/products')
   let dataCard = await resCard.json()
@@ -57,12 +57,12 @@ let fetchCard = async () => {
   document.querySelector('div.card-container').innerHTML = htmlCard
 }
 
-document.addEventListener('DOMContentLoaded', fetchCard)
+document.addEventListener('DOMContentLoaded', axiosCard)
 
 // card-1
 
 // card-2
-let fetchCard2 = async () => {
+let axiosCard2 = async () => {
   let htmlCard2 = ''
   let resCard = await fetch('http://localhost:3004/products2')
   let dataCard = await resCard.json()
@@ -120,22 +120,24 @@ let fetchCard2 = async () => {
   document.querySelector('div.card-container2').innerHTML = htmlCard2
 }
 
-document.addEventListener('DOMContentLoaded', fetchCard2)
+document.addEventListener('DOMContentLoaded', axiosCard2)
 
 // card-2
 
 // customer
 const slider = document.getElementById('testimonialSlider')
 
-const fetchTestimonials = async () => {
+const fetchTestimonials = () => {
   let htmlTestimonials = ''
-  try {
-    const resTestimonials = await fetch('http://localhost:3004/customer')
-    const dataTestimonials = await resTestimonials.json()
 
-    dataTestimonials.forEach(testimonial => {
-      htmlTestimonials += `
-            <div class="p-6 rounded-[15px] shadow-md bg-white flex-shrink-0 h-56 w-96 ml-4 border border-gray-200">
+  $.ajax({
+    url: 'http://localhost:3004/customer',
+    method: 'GET',
+    dataType: 'json',
+    success: function (dataTestimonials) {
+      dataTestimonials.forEach(testimonial => {
+        htmlTestimonials += `
+          <div class="p-6 rounded-[15px] shadow-md bg-white flex-shrink-0 h-56 w-96 ml-4 border border-gray-200">
             <!-- بخش ستاره‌ها -->
             <div class='flex mt-1 text-yellow-400'>⭐⭐⭐⭐⭐</div>
             <!-- نام و تأیید -->
@@ -146,15 +148,17 @@ const fetchTestimonials = async () => {
             <!-- نقل قول -->
             <p class="text-gray-700 text-sm italic">"${testimonial.testimonial}"</p>
           </div>
-      `
-    })
+        `
+      })
 
-    slider.innerHTML = htmlTestimonials
-  } catch (error) {
-    console.error('Error fetching testimonials:', error)
-  }
+      slider.innerHTML = htmlTestimonials
+    },
+    error: function (error) {
+      console.error('Error fetching testimonials:', error)
+    }
+  })
 }
 
-document.addEventListener('DOMContentLoaded', fetchTestimonials)
+$(document).ready(fetchTestimonials)
 
 // customer
