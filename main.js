@@ -162,3 +162,16 @@ const fetchTestimonials = () => {
 $(document).ready(fetchTestimonials)
 
 // customer
+$(document).on("scroll",function(){
+  let st=$(this).scrollTop()
+  if(st>1000){
+    $("div.ct1").fadeIn(500)
+  }
+  else{
+    $('div.ct1').fadeOut(500)
+  }
+})
+$('div.ct1').on("click",function(){
+  $('html,body').animate({scrollTop:0},1000)
+
+})
