@@ -2246,6 +2246,26 @@ html {
   height: 100%;
 }
 
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[650px\] {
+  height: 650px;
+}
+
+.h-\[680px\] {
+  height: 680px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2950,6 +2970,18 @@ html {
     height: 700px;
   }
 
+  .sm\:h-\[750px\] {
+    height: 750px;
+  }
+
+  .sm\:h-\[50px\] {
+    height: 50px;
+  }
+
+  .sm\:h-\[650px\] {
+    height: 650px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3099,6 +3131,14 @@ html {
 
   .lg\:h-\[800px\] {
     height: 800px;
+  }
+
+  .lg\:h-\[850px\] {
+    height: 850px;
+  }
+
+  .lg\:h-\[900px\] {
+    height: 900px;
   }
 
   .lg\:w-auto {
